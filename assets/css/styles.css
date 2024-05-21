@@ -1,0 +1,226 @@
+/* styles.css */
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header styles */
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #77aaff 3px solid;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+/* Main content styles */
+.movie-list-container {
+    margin: 20px 0;
+}
+
+.movie-item {
+    background: #fff;
+    margin: 10px 0;
+    padding: 20px;
+    border: #ccc 1px solid;
+}
+
+.movie-item h3 {
+    margin: 0;
+    color: #333;
+}
+
+.movie-item p {
+    color: #666;
+}
+
+/* Search bar styles */
+#search-bar {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Login styles */
+.login-container {
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.login-container input[type="email"],
+.login-container input[type="password"],
+.login-container input[type="text"] {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-container button {
+    width: 95%;
+    padding: 10px;
+    margin: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: #0056b3;
+}
+
+.login-container .show-password {
+    float: right;
+    margin-top: -30px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.login-container a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+    text-decoration: none;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}
+
+/* Footer styles */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Media Queries */
+
+/* Mobile Phones */
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    header ul {
+        text-align: center;
+    }
+
+    header li {
+        display: block;
+        padding: 10px 0;
+    }
+
+    #search-bar {
+        width: 100%;
+    }
+
+    .login-container {
+        width: 90%;
+    }
+}
+
+/* Tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .container {
+        width: 80%;
+    }
+
+    .movie-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .movie-item h3 {
+        text-align: center;
+    }
+
+    .movie-item p {
+        text-align: center;
+    }
+
+    .login-container {
+        width: 50%;
+    }
+}
+
+/* Desktops and larger screens */
+@media (min-width: 1025px) {
+    .container {
+        width: 60%;
+    }
+
+    .movie-item {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .movie-item h3 {
+        flex: 1;
+    }
+
+    .movie-item p {
+        flex: 1;
+    }
+
+    .login-container {
+        width: 500px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}

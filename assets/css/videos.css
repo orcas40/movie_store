@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"]{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+select{
+    width: 150px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    display: block;
+    width: 70px;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.search-bar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    flex: 1;
+}
+
+.category-filter {
+    margin-bottom: 20px;
+}
+
+.movie-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.text-green{
+    color:darkgreen;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 100px;
+    left: 40%;
+    width: 250px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: #f4f4f4;
+    padding: 40px;
+    padding-right: 60px;
+    border-radius: 5px;
+    width: 350px;
+    text-align: center;
+    border:solid thin dodgerblue;
+}
+
+.popup-content button {
+    margin-top:10px;
+    display: block;
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.popup-content button:hover {
+    background-color: #0056b3;
+}
+
+.close {
+    float: right;
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .container {
+        padding: 10px;
+    }
+
+    .search-bar {
+        flex-direction: column;
+    }
+
+    .search-bar input,
+    .search-bar button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .movie-item {
+        padding: 5px;
+    }
+}

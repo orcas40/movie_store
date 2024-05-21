@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script src="../../assets/js/scripts.js"></script>
+</head>
+<body>
+<div class="login-container">
+    <h2>Login</h2>
+    <form id="login-form" action="../backend/auth/login.php" method="POST">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <button type="button" id="toggle-password" onclick="show_text()">Show Password</button>
+        <button type="submit">Login</button>
+    </form>
+    <a href="./views/auth/registry_user.html">Register</a>
+</div>
+<script src="../assets/js/scripts.js"></script>
+</body>
+</html>
