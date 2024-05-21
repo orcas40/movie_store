@@ -2,8 +2,8 @@
 // Datos de conexión a la base de datos
 function conexion(){
     $host = 'localhost';
-    $usuario = 'root';
-    $contraseña = 'kldnpdlvkm';
+    $usuario = 'usario_db';
+    $contraseña = 'contrasenia_db';
     $base_datos = 'movie_store';
     $conexion = new mysqli($host, $usuario, $contraseña, $base_datos);
     if ($conexion->connect_error) {
